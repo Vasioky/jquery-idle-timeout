@@ -117,6 +117,7 @@
 			$.ajax({
 				timeout: options.AJAXTimeout,
 				url: options.keepAliveURL,
+				global: false,
 				error: function(){
 					self.failedRequests--;
 				},
